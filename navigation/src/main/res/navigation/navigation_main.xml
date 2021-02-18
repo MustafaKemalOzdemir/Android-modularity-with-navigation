@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/navigation_device_controller"
+    android:id="@+id/navigation_main">
+
+    <include app:graph="@navigation/navigation_developer"/>
+
+    <include app:graph="@navigation/navigation_device_controller"/>
+
+    <action
+        app:popUpTo="@id/navigation_main"
+        android:id="@+id/actionDeveloperFeature"
+        app:destination="@id/navigation_developer"
+
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+
+    <action
+        app:popUpTo="@id/navigation_main"
+        android:id="@+id/actionDeviceConfigurationFeature"
+        app:destination="@id/navigation_device_controller"
+
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+</navigation>

@@ -1,0 +1,28 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-android-extensions'
+}
+apply from: "$rootProject.projectDir/scripts/default_android_config.gradle"
+apply from: "$rootProject.projectDir/scripts/sources.gradle"
+
+dependencies {
+
+    implementation project(':core')
+
+    implementation libraries.fragment
+    implementation libraries.lifecycle
+    implementation libraries.material
+    implementation libraries.constraintLayout
+    implementation libraries.navigation
+
+    implementation libraries.dagger2
+    implementation libraries.dagger2AndroidSupport
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    kapt libraries.dagger2Compiler
+    annotationProcessor libraries.dagger2Processor
+    kapt libraries.dagger2Processor
+
+    implementation project(':navigation')
+}

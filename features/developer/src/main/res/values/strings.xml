@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Developer Fragment -->
+    <string name="developerFragment_screen_tile">Developer Screen</string>
+    <string name="developerFragment_wifi_button">WiFi Search</string>
+    <string name="developerFragment_bluetooth_button">Bluetooth Search</string>
+    <string name="developerFragment_commandSend_button">Command Send</string>
+
+    <!-- Developer Command Send Fragment -->
+    <string name="developerCommandSendFragment_screen_tile">Command Send Screen</string>
+    <string name="developerCommandSendFragment_connection_status">Connection Status:</string>
+    <string name="developerCommandSendFragment_connect_button">Connect</string>
+    <string name="developerCommandSendFragment_send_button">Send</string>
+    <string name="developerCommandSendFragment_clear_list_button">Clear List</string>
+    <string name="developerCommandSendFragment_defaultIp">192.168.2.1</string>
+    <string name="developerCommandSendFragment_commandLog_listItem_success">Success</string>
+    <string name="developerCommandSendFragment_commandLog_listItem_fail">Failed</string>
+
+    <!-- Developer Wifi Fragment -->
+    <string name="developerWifiFragment_screen_tile">Wi-Fi Search Screen</string>
+</resources>

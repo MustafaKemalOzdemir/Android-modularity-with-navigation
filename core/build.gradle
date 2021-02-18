@@ -1,0 +1,22 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+
+apply from: "$rootProject.projectDir/scripts/default_android_config.gradle"
+apply from: "$rootProject.projectDir/scripts/sources.gradle"
+
+dependencies {
+
+    implementation libraries.fragment
+    implementation libraries.lifecycle
+    implementation libraries.material
+    implementation libraries.navigation
+    implementation libraries.coroutines
+    implementation libraries.dagger2
+    implementation libraries.dagger2AndroidSupport
+    kapt libraries.dagger2Compiler
+
+    testImplementation testLibraries.jUnitApi
+}

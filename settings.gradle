@@ -1,0 +1,6 @@
+include ':navigation'
+include ':features:deviceConfiguration'
+include ':features:developer'
+include ':core'
+include ':app'
+rootProject.name = "Lynk"

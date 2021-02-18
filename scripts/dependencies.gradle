@@ -1,0 +1,67 @@
+ext {
+    versions = [
+            minSdkVersion : 24,
+            compileSdkVersion        : 30,
+            targetSdkVersion         : 30,
+            buildToolsVersion        : "30.0.2",
+            appCompatVersion         : "1.2.0",
+
+            materialVersion          : "1.2.1",
+            constraintLayoutVesion   : "2.0.4",
+            coroutinesVersion        : "1.3.9",
+            androidCoreVersion       : "1.3.2",
+            espressoVersion          : "3.3.0",
+            jUnitVersion             : "5.5.1",
+            lifecycleVersion         : "2.2.0-alpha03",
+            dagger2Version           : "2.31.2"
+    ]
+
+    libraries = [
+            androidCore         : "androidx.core:core-ktx:${versions.androidCoreVersion}",
+            /**
+             * Android libraries
+             */
+            appCompat         : "androidx.appcompat:appcompat:${versions.appCompatVersion}",
+            recyclerView      : "androidx.recyclerview:recyclerview:${versions.recyclerViewVersion}",
+            cardView          : "androidx.cardview:cardview:${versions.cardViewVersion}",
+            constraintLayout  : "androidx.constraintlayout:constraintlayout:${versions.constraintLayoutVesion}",
+            multixDex         : "androidx.multidex:multidex:2.0.1",
+            fragment          : "androidx.fragment:fragment-ktx:${versions.fragmentVersion}",
+            material          : "com.google.android.material:material:${versions.materialVersion}",
+
+            /**
+             * Jetpack
+             */
+            navigation        : [
+                    "androidx.navigation:navigation-fragment-ktx:$nav_version",
+                    "androidx.navigation:navigation-ui-ktx:$nav_version"
+            ],
+
+            room              : [
+                    "androidx.room:room-runtime:${versions.roomVersion}",
+                    "androidx.room:room-ktx:${versions.roomVersion}"
+            ],
+
+            /**
+             * Kotlin
+             */
+            coroutines        : "org.jetbrains.kotlinx:kotlinx-coroutines-android:${versions.coroutinesVersion}",
+
+            lifecycle         : "androidx.lifecycle:lifecycle-extensions:${versions.lifecycleVersion}",
+            liveDataKTX       : "androidx.lifecycle:lifecycle-livedata-ktx:${versions.lifecycleVersion}",
+
+            dagger2           : "com.google.dagger:dagger:${versions.dagger2Version}",
+            dagger2AndroidSupport    : "com.google.dagger:dagger-android-support:${versions.dagger2Version}",
+            dagger2Compiler   : "com.google.dagger:dagger-compiler:${versions.dagger2Version}",
+            dagger2Processor  : "com.google.dagger:dagger-android-processor:${versions.dagger2Version}",
+
+    ]
+
+    testLibraries = [
+            jUnitApi               : "org.junit.jupiter:junit-jupiter-api:${versions.jUnitVersion}",
+            jUnitAndroid           : "androidx.test.ext:junit:1.1.2",
+            espresso               : "androidx.test.espresso:espresso-core:${versions.espressoVersion}",
+    ]
+
+
+}

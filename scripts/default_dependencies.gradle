@@ -1,0 +1,18 @@
+
+
+dependencies{
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    /*
+    implementation libraries.dagger
+
+    kapt annotationProcessors.daggerCompiler
+
+    testImplementation testLibraries.jUnitApi
+    testImplementation testLibraries.mockk
+    testImplementation testLibraries.kluent
+
+    testRuntimeOnly testLibraries.jUnitEngine
+
+     */
+}

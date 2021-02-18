@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Developer Fragment -->
+    <string name="deviceConfigurationFragment_screen_tile">Device Configuration Screen</string>
+    <string name="deviceConfigurationFragment_translate2DeveloperFragment_text">Go to Developer</string>
+</resources>
